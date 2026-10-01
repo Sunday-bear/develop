@@ -25,6 +25,12 @@ def run_stage_1_crawler() -> None:
     run_crawler()
 
 
+def run_stage_2_pdf_to_text() -> None:
+    from src.pdf_to_text.pdf_to_text import run as run_pdf_to_text
+    logger.info("━━━ Stage 2: PDF 转文本 ━━━")
+    run_pdf_to_text()
+
+
 def run_all() -> None:
     logger.info("╔══════════════════════════════════════╗")
     logger.info("║   Roborock RAG 项目 — 完整链路启动   ║")
@@ -33,6 +39,7 @@ def run_all() -> None:
     start = time.time()
 
     run_stage_1_crawler()
+    run_stage_2_pdf_to_text()
 
     elapsed = time.time() - start
     logger.info(f"全部完成，耗时 {elapsed:.1f} 秒")

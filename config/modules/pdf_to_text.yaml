@@ -1,0 +1,12 @@
+input:
+  dir: "data"
+  glob: "**/*.pdf"
+
+output:
+  dir: "output/pdf_text"
+
+clean:
+  remove_page_numbers: true
+  remove_headers_footers: true
+  max_consecutive_blank_lines: 2
+  strip_symbols: true

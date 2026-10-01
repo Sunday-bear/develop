@@ -1,0 +1,33 @@
+# ===== 敏感信息 =====
+.env
+.env.local
+*.pem
+*.key
+
+# ===== 日志 =====
+logs/
+*.log
+
+# ===== 本地产出数据 =====
+data/
+output/
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# ===== 虚拟环境 =====
+venv/
+.venv/
+env/
+
+# ===== IDE =====
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

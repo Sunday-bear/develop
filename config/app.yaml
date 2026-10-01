@@ -1,0 +1,10 @@
+project:
+  name: roborock_rag
+  root_dir: "."
+
+logs:
+  dir: "logs"
+  level: "INFO"
+
+data_dir: "data"
+output_dir: "output"

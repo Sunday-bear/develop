@@ -1,0 +1,17 @@
+api:
+  base_url: "https://productcn.roborock.com"
+  category_path: "/api/category"
+  products_path: "/api/category/products"
+  product_info_path: "/api/product/info"
+
+target:
+  vacuum_category_id: 1
+
+request:
+  timeout: 30
+  max_retry: 3
+  interval_min: 1.0
+  interval_max: 2.0
+
+output:
+  dir: "data"
